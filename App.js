@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function App() {
   const [valorLitro, setvalorLitro] = useState ('')
-  const [quantidadeAtribuida, setquantidadeAtribuida] = useState ('')
+  const [quantidadeAbastecida, setquantidadeAbastecida] = useState ('')
   const [kmRodado, setkmRodado] = useState ('')
   const [resultado, setvalorResultado] = useState ('')
 
@@ -26,7 +26,7 @@ export default function App() {
         <TextInput style={styles.input} keyboardType="numeric"/>
       </View>
       <View>
-        <Text style={styles.title}>Quantidade Colocada</Text>
+        <Text style={styles.title}>Quantidade Abastecida</Text>
         <TextInput style={styles.input} keyboardType="numeric"/>
       </View>
       <View>
@@ -52,12 +52,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
   },
-  picker: {
-    color: '#fff',
-    width: 200,
-    height: 50,
-    backgroundColor: '#000', 
-  },
+
   input: {
     color: '#fff',
     height: 40,
